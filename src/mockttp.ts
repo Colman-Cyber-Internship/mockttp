@@ -756,6 +756,7 @@ export type SubscribableEvent =
     | 'request-initiated'
     | 'request'
     | 'response'
+    | 'security-check'
     | 'websocket-request'
     | 'websocket-accepted'
     | 'websocket-message-received'

@@ -275,6 +275,15 @@ export class MockttpAdminRequestBuilder {
                     ${this.schema.asOptionalField('Response', 'tags')}
                 }
             }`,
+            'security-check': gql`subscription OnSecurityCheck {
+                securityCheckCompleted {
+                    id,
+                    statusCode,
+                    statusMessage,
+                    body
+                }
+            }
+            `,
             'websocket-request': gql`subscription OnWebSocketRequest {
                 webSocketRequest {
                     id,
