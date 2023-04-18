@@ -194,7 +194,7 @@ export class AdminClient<Plugins extends { [key: string]: AdminPlugin<any, any> 
 
     private adminClientOptions: RequireProps<AdminClientOptions, 'adminServerUrl'>;
 
-    private adminSessionBaseUrl: string | undefined;
+    adminSessionBaseUrl: string | undefined;
     private adminServerStream: Duplex | undefined;
     private subscriptionClient: SubscriptionClient | undefined;
 
